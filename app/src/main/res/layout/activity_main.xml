@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/Cared1"
+            android:elevation="@dimen/toolbar_elevation"
+            android:theme="@style/panorama"
+            app:contentInsetStart="@dimen/content_inset"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/black"
+            tools:ignore="UnusedAttribute" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            android:elevation="@dimen/toolbar_elevation"
+            android:paddingBottom="@dimen/grid_padding_large"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="UnusedAttribute">
+            <Button
+                android:id="@+id/affixButton"
+                style="@style/AccentButton"
+                android:layout_marginStart="@dimen/content_inset_less"
+                android:layout_marginLeft="@dimen/content_inset_less"
+                android:layout_marginBottom="@dimen/grid_padding_large"
+                android:layout_toStartOf="@+id/expandButton"
+                android:layout_toLeftOf="@+id/expandButton"
+                android:enabled="false"
+                android:text="@string/affix_zero" />
+            <ImageView
+                android:id="@+id/expandButton"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignTop="@+id/affixButton"
+                android:layout_alignBottom="@+id/affixButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/content_inset"
+                android:layout_marginRight="@dimen/content_inset"
+                android:background="?selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_expand"
+                tools:ignore="ContentDescription" />
+
+            <com.afollestad.photoaffix.viewcomponents.SettingsLayout
+                android:id="@+id/settingsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/affixButton"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="@dimen/grid_padding_small"
+                android:scrollbars="vertical"
+                tools:background="#40000000" />
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/no_photos_found"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="@dimen/header_textsize"
+                android:textStyle="italic" />
+        </FrameLayout>
+    </LinearLayout>
+  <FrameLayout
+      android:id="@+id/content_loading_progress_frame"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#BF000000"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="gone">
+    <ProgressBar
+        android:id="@+id/content_loading_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="?android:progressBarStyleLarge" />
+  </FrameLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6655072742389817/7689605414">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

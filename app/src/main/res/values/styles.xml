@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    <item name="android:textColorSecondary">@android:color/black</item>
+    <item name="colorControlNormal">#000</item>
+
+  </style>
+  <style name="panorama" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/Cared1</item>
+    <item name="colorPrimaryDark">@color/Cared1</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    <item name="android:textColorSecondary">@android:color/black</item>
+    <item name="colorControlNormal">#000</item>
+
+  </style>
+  <style name="App" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorSecondary">@android:color/black</item>
+    <item name="colorControlNormal">#000</item>
+    <item name="android:tint">#000</item>
+
+  </style>
+
+  <style name="AccentButton">
+    <item name="android:textColor">@color/accent_button_textselector</item>
+    <item name="android:background">@drawable/accent_button</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/button_height</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+  </style>
+  <style name="Home" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorprimaryDark2</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorSecondary">@android:color/black</item>
+
+  </style>
+
+</resources>

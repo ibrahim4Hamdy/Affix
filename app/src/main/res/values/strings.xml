@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Panorama</string>
+
+    <string name="affix_zero">Affix (0)</string>
+    <string name="affix_x">Affix (%1$d)</string>
+    <string name="clear">Clear</string>
+
+    <string name="error">Error</string>
+    <string name="no_photos_found">No local photos were found!</string>
+    <string name="need_two_or_more">You need two or more images!</string>
+    <string name="ps" tools:ignore="TypographyDashes">
+       <b>Introduction </b>
+        <br/>
+        Panorama application The application can modify pictures and make pictures horizontal or verticalThe app can cut  photos.
+        <br/>
+        <b>Age compatibility of the application</b>
+        <br/>
+        The app is suitable for ages 13 and up.
+        <br/>
+        <b>Permissions</b>
+        <br/>
+        We require the user to access the Internet and also reading from the storage memory to get the photos, the highest modification.
+        <br/>
+        <b>Data collection and analysis purposes</b>
+        <br/>
+        You only get the images to edit, we do not store the images on servers or anything else.
+        <br/>
+        <b>Sharing data with third parties....?</b>
+        <br/>
+        No, we do not share or store any data
+    </string>
+    <string name="privacy_policy_agreement">
+        By using this app, you agree to our
+        <a href="https://sites.google.com/view/arbahokdemo/privacy-policy" style="color:blue;">Privacy Policy</a>.
+    </string>
+
+</resources>
