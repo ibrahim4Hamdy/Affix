@@ -1,0 +1,21 @@
+<resources>
+
+  <string name="about">About</string>
+  <string name="PrivacyPolicy">Privacy Policy</string>
+
+  <string name="dismiss">Dismiss</string>
+  <string name="about_body">
+    <a href='https://sites.google.com/view/arbahokdemo/privacy-policy'>Privacy Policy</a>
+</string>
+
+  <string name="horizontal">Horizontal</string>
+  <string name="vertical">Vertical</string>
+
+  <string name="image_spacing">Image Spacing</string>
+  <string name="output_settings">Output Settings</string>
+  <string name="continueStr">Continue</string>
+  <string name="format">Format:</string>
+  <string name="quality">Quality:</string>
+
+
+</resources>
